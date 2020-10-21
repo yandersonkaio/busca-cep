@@ -1,17 +1,17 @@
 const express = require('express');
 const Correios = require('node-correios');
-const cors = require('cors');
+//const cors = require('cors');
 
 const correios = new Correios();
 const app = express();
 
-app.use(cors()); 
+//app.use(cors()); 
 
 app.get('/', (request, response) => {
    
-   const data = request.query;
+   const { cep } = request.query;
    
-   correios.consultaCEP({ cep: data.cep })
+   correios.consultaCEP({ cep: cep })
    .then(result => {
        response.send(result);
    })
