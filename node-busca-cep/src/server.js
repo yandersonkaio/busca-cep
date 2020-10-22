@@ -1,11 +1,11 @@
 const express = require('express');
 const Correios = require('node-correios');
-//const cors = require('cors');
+const cors = require('cors');
 
 const correios = new Correios();
 const app = express();
 
-//app.use(cors()); 
+app.use(cors()); 
 
 app.get('/', (request, response) => {
    
@@ -16,7 +16,7 @@ app.get('/', (request, response) => {
        response.send(result);
    })
    .catch(error => {
-       console.log(error);
+       response.send(error);
    });
 });
 

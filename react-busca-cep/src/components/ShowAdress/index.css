@@ -1,0 +1,30 @@
+div#adress {
+    
+    width: 520px;
+    background: #FFF;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+    padding: 50px;
+    
+}
+
+div#adress h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+div#adress ul li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+div#adress ul li {
+    display: block;
+    width: 100%;
+}
