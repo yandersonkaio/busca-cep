@@ -43,7 +43,7 @@ function App() {
       <div className="container">
         <h1>Buscar endereço pelo CEP</h1>
         <form>
-          <label htmlFor="cep_number">Digite seu CEP</label>
+          <label htmlFor="cep_number">Digite seu seu CEP</label>
 
           <input 
             type="number" 
